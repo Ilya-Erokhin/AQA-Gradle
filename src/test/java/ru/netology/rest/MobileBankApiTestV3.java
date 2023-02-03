@@ -20,7 +20,7 @@ class MobileBankApiTestV3 {
                 .statusCode(200)
                 .contentType(ContentType.JSON)
                 .body("", hasSize(3))
-                .body("[0].currency", equalTo("RUB"))
+                .body("[0].currency", equalTo("RUR"))
                 .body("[0].balance", greaterThanOrEqualTo(0))
         ;
     }
